@@ -58,3 +58,9 @@ fabric.properties
 # *.ipr
 
 # End of https://www.gitignore.io/api/pycharm
+
+#heroku
+venv
+*.pyc
+staticfiles
+.env
