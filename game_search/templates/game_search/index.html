@@ -5,7 +5,7 @@
 {% block active_index %} active {% endblock %}
 
 {% block body %}
-
+<h1>A draft version of game trading online market for true gamers</h1>
 <div id="home">
     <div class="container">
                 <form class="form-horizontal" action='{% url "game_search:search" %}' method="POST">{% csrf_token %}
@@ -22,6 +22,7 @@
                 </form>
     </div>
 </div>
+
 <h3>Random PC games:</h3>
 <ol>
 {% for item in results %}
