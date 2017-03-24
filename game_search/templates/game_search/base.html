@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %} {% endblock %}</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.1.4/Chart.min.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <style>
+	.jumbotron {
+		background-color: #f6f6f6;
+		color: #000000;
+		padding: 100px 25px;
+	}
+
+    .chart {
+      padding-left: 0;
+      padding-right: 0;
+      margin-top: 2em;
+      margin-bottom: 2em;
+      margin-left: auto;
+      margin-right: auto;
+      display: block;
+      font-size: 30px;
+    }
+	</style>
+</head>
+<body>
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="{% url 'game_search:index' %}">Need For Games</a>
+    </div>
+    <ul class="nav navbar-nav">
+        <li class="{%block active_index %} {% endblock %}"><a href="{% url 'game_search:index' %}">Home</a></li>
+        <li class=><a href="https://smanalyzer.herokuapp.com">Social Media Analyzer</a></li>
+
+    </ul>
+  </div>
+</nav>
+{% block body %} {% endblock %}
+</body>
+</html>

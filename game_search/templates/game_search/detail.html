@@ -1,0 +1,49 @@
+{% extends 'game_search/base.html' %}
+
+{%block title%} Homepage {% endblock %}
+
+{% block active_index %} active {% endblock %}
+
+{% block body %}
+<style>
+
+    .column1, .column2 {
+    width:450px;
+    float:left
+    }
+</style>
+<h1>{{title}}</h1>
+<hr/>
+<div class="column1">
+    <form action="" method="post">
+        <input type="email"/>
+    <input type="submit" value="Add Seller">
+    </form><br/>
+    Seller:
+    <div>
+        <ol>
+            <li>abc@gmail.com</li>
+            <li>abc@gmail.com</li>
+            <li>abc@gmail.com</li>
+            <li>abc@gmail.com</li>
+        </ol>
+    </div>
+
+</div>
+
+<div class="column2">
+    <form action="" method="post">
+        <input type="email"/>
+    <input type="submit" value="Add Buyer">
+    </form><br/>
+
+    Buyer:
+    <div>
+        <ol>
+            <li>abc@gmail.com</li>
+            <li>abc@gmail.com</li>
+            <li>abc@gmail.com</li>
+            <li>abc@gmail.com</li>
+        </ol>
+    </div></div>
+{% endblock %}

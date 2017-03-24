@@ -1,0 +1,17 @@
+{% extends 'game_search/base.html' %}
+
+{%block title%} Homepage {% endblock %}
+
+{% block active_index %} active {% endblock %}
+
+{% block body %}
+
+{% for item in results %}
+
+<li><a href="{% url 'game_search:detail' item.name %}" ><p>{{item.name}}</p><p><img width="20%" heigth="20%" src="{{item.image}}" alt="No photo for this game yet"/></p></a></li>
+
+
+{% endfor %}
+
+
+{% endblock %}
