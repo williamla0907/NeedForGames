@@ -15,7 +15,8 @@
 <h1>{{title}}</h1>
 <hr/>
 <div class="column1">
-    <form action="" method="post">
+    <form action="#" method="post">
+        {% csrf_token %}
         <input type="email"/>
     <input type="submit" value="Add Seller">
     </form><br/>
@@ -32,7 +33,8 @@
 </div>
 
 <div class="column2">
-    <form action="" method="post">
+    <form action="#" method="post">
+        {% csrf_token %}
         <input type="email"/>
     <input type="submit" value="Add Buyer">
     </form><br/>
